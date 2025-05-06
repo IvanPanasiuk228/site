@@ -239,6 +239,7 @@ body {
   body {
     font-size: 14px; /* Зменшення розміру шрифту */
     padding: 10px; /* Відступи для мобільних */
+    background-color: red; /* Червоний фон для перевірки */
   }
 
   .hero {
