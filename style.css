@@ -416,12 +416,12 @@ body {
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 550px) {
   .tags {
     position: relative !important; /* Відносне позиціонування для контейнера */
     width: 100%; /* Контейнер займає всю ширину */
     height: 300px; /* Висота контейнера */
-    margin-top: 100px !important; /* Відступ зверху */
+    margin-top: 130px !important; /* Відступ зверху */
     margin-bottom: 50px; /* Відступ знизу */
   }
 
@@ -461,4 +461,15 @@ body {
     top: 200px;
     left: 40%;
   }
+
+  
+
+  .socials p {
+    /* Вирівнювання тексту по лівому краю */
+    margin-left: -100px; /* Скидаємо зовнішні відступи */
+  }
+  .bottom{
+    margin-top: 50px;
+  }
+
 }
