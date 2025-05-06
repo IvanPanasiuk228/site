@@ -418,99 +418,47 @@ body {
 
 @media (max-width: 450px) {
   .tags {
-    display: flex;
-    flex-wrap: wrap;
-    /* Перенос кнопок на новий рядок */
-    justify-content: center;
-    /* Вирівнювання по центру */
-    align-items: center;
-    /* Вирівнювання по вертикалі */
-    gap: 8px;
-    /* Відстань між кнопками */
-    margin: 20px 0;
-    /* Відступи зверху і знизу */
-    padding: 0 10px;
-    /* Внутрішні відступи для контейнера */
+    position: relative !important; /* Відносне позиціонування для контейнера */
+    width: 100%; /* Контейнер займає всю ширину */
+    height: 300px; /* Висота контейнера */
+    margin-top: 100px !important; /* Відступ зверху */
+    margin-bottom: 50px; /* Відступ знизу */
   }
 
   .tag {
-    display: flex;
-    justify-content: center;
-    /* Текст по центру кнопки */
-    align-items: center;
-    /* Вирівнювання тексту по вертикалі */
-    font-size: 12px;
-    /* Зменшення розміру тексту */
-    padding: 10px 12px;
-    /* Внутрішні відступи кнопки */
-    background: rgba(255, 255, 255, 0.1);
-    /* Напівпрозорий фон */
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    /* Напівпрозорий бордер */
-    border-radius: 20px;
-    /* Округлі краї */
-    flex: 1 1 calc(40% - 10px);
-    /* Кнопки займають 40% ширини з відступами */
-    max-width: 140px;
-    /* Максимальна ширина кнопки */
-    box-sizing: border-box;
-    /* Враховує padding у ширині */
-    text-align: center;
-    /* Текст по центру */
-    white-space: nowrap;
-    /* Забороняє перенесення тексту */
+    position: absolute !important; /* Абсолютне позиціонування для кнопок */
+    background: rgba(255, 255, 255, 0.1); /* Напівпрозорий фон */
+    padding: 8px 16px; /* Внутрішні відступи кнопки */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Напівпрозорий бордер */
+    border-radius: 20px; /* Округлі краї */
+    font-size: 14px; /* Розмір тексту */
+    white-space: nowrap; /* Забороняємо перенесення тексту */
+    backdrop-filter: blur(5px); /* Ефект розмиття */
   }
 
-  .company-name {
-    margin-bottom: 40px;
-    /* Відступ між заголовком і кнопками */
+  /* Індивідуальні позиції для кожної кнопки */
+  .tag1 {
+    top: 20px;
+    left: 10px;
   }
 
-  .hero {
-    flex-direction: column;
-    /* Вертикальне розташування елементів */
-    align-items: center;
-    /* Центрування всіх елементів */
-    padding: 15px;
-    /* Зменшення відступів */
+  .tag2 {
+    top: 100px;
+    left: 60%;
   }
 
-  .hero-content {
-    width: 100%;
-    /* Ширина блоку для тексту */
-    text-align: center;
-    /* Центрування тексту */
+  .tag3 {
+    top: 140px;
+    left: 20%;
   }
 
-  .hero-image img {
-    max-width: 80%;
-    /* Зменшення розміру зображення */
-    height: auto;
-    /* Пропорційна висота */
-    margin-top: 20px;
-    /* Відступ зверху */
+  .tag4 {
+    top: 50px;
+    left: 80%;
   }
 
-  .socials {
-    margin-top: 20px;
-    /* Відступ між текстом і кнопками */
-    text-align: center;
-    /* Центрування тексту */
-  }
-
-  .socials p {
-    font-size: 12px;
-    /* Зменшення розміру тексту */
-    padding: 10px;
-    /* Зменшення внутрішніх відступів */
-  }
-
-  .button {
-    width: 100%;
-    /* Кнопка займає всю ширину */
-    padding: 8px;
-    /* Зменшення внутрішніх відступів */
-    font-size: 14px;
-    /* Зменшення розміру тексту */
+  .tag5 {
+    top: 200px;
+    left: 40%;
   }
 }
