@@ -239,7 +239,6 @@ body {
   body {
     font-size: 14px; /* Зменшення розміру шрифту */
     padding: 10px; /* Відступи для мобільних */
-    background-color: red; /* Червоний фон для перевірки */
   }
 
   .hero {
@@ -260,13 +259,14 @@ body {
   .tags {
     display: flex;
     flex-wrap: wrap; /* Перенос тегів на новий рядок */
-    justify-content: center;
-    margin: 20px 0;
+    justify-content: center; /* Вирівнювання по центру */
+    margin: 20px 0; /* Відступи зверху і знизу */
   }
 
   .tag {
-    margin: 5px; /* Відступи між тегами */
-    font-size: 12px; /* Зменшення розміру тексту в тегах */
+    margin: 10px; /* Відступи між кнопками */
+    font-size: 14px; /* Розмір тексту */
+    text-align: center; /* Текст по центру */
   }
 
   .socials {
