@@ -1,370 +1,516 @@
 body {
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
-    /*background: #0b0c2a;*/
-    color: white;
-    background-image: url(foto2.jpg); /* Вставте шлях до вашої фотографії */
-    background-size: 200px; /* Масштабує фонове зображення, щоб воно покривало весь екран */
-    background-position: center; /* Центрує зображення на екрані */
-    background-repeat: repeat; /* Зображення не повторюється */
-    background-attachment: fixed; /* Фіксує фон */
-  }
-  
-  .hero {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 50px;
-    /*background: linear-gradient(135deg, #0b0c2a 0%, #352b4c 100%);*/
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .hero-content {
-    max-width: 50%;
-  }
-  
-  .hero-content h1 {
-    font-size: 48px;
-    margin-bottom: 10px;
-  }
-  
-  .hero-content p {
-    font-size: 18px;
-    margin-bottom: 20px;
-  }
-  
-  .contact-btn {
-    background: white;
-    color: black;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 30px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  .hero-image{
-    margin-right: 20px;
-    margin-top: 130px;
-  }
-  .hero-image img {
-    height: 500px;
-  }
-  
-  .tags {
-    margin-bottom: 20px;
-  }
-  
-  .tags span {
-    background: rgba(255,255,255,0.1);
-    padding: 5px 15px;
-    border-radius: 20px;
-    margin: 5px;
-    display: inline-block;
-    font-size: 14px;
-  }
-  
-  .reasons {
-    padding: 50px;
-    /*background: #1d1e3b;*/
-    text-align: center;
-  }
-  
-  .reasons h2 {
-    font-size: 36px;
-    margin-bottom: 30px;
-  }
-  
-  .cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    margin-top: 50px;   
-  }
-  
-  .card {
-    background: #2a2b4d;
-    border-radius: 15px;
-    padding: 20px;
-    text-align: left;
-    letter-spacing: 1.5px;
-  }
-  
-  .card.purple {
-    background: #4a3bd6;
-  }
-  
-  .card h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
-  }
-  
-  .card p {
-    font-size: 14px;
-    line-height: 1.6;
-  }
-  .tags {
-    position: relative;
-    width: 400px;
-    height: 250px;
-    margin-bottom: 20px;
-    margin-top: 100px;
-    margin-left: 70px;
-  }
-  /* Спільний стиль для всіх тегів */
-.tag {
-    position: absolute;
-    background: rgba(255, 255, 255, 0.08);
-    padding: 8px 16px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 20px;
-    font-size: 14px;
-    white-space: nowrap;
-    backdrop-filter: blur(5px);
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  /*background: #0b0c2a;*/
+  color: white;
+  background-image: url(foto2.jpg);
+  /* Вставте шлях до вашої фотографії */
+  background-size: 200px;
+  /* Масштабує фонове зображення, щоб воно покривало весь екран */
+  background-position: center;
+  /* Центрує зображення на екрані */
+  background-repeat: repeat;
+  /* Зображення не повторюється */
+  background-attachment: fixed;
+  /* Фіксує фон */
+}
 
-  }
-  .tag1, .tag2{
-    background: rgba(223, 207, 207, 0.2);
-  }
-  
-  /* Повністю прозорий фон для "освещение", "монтаж", "анимация" */
-  .tag1, .tag2, .tag3, .tag4, .tag5 { 
-    background: transparent;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    
-         /* Напівпрозорість */
-    }
-  
-  
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  /*background: linear-gradient(135deg, #0b0c2a 0%, #352b4c 100%);*/
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-content {
+  max-width: 50%;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.contact-btn {
+  background: white;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.hero-image {
+  margin-right: 20px;
+  margin-top: 130px;
+}
+
+.hero-image img {
+  height: 500px;
+}
+
+.tags {
+  margin-bottom: 20px;
+}
+
+.tags span {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 5px 15px;
+  border-radius: 20px;
+  margin: 5px;
+  display: inline-block;
+  font-size: 14px;
+}
+
+.reasons {
+  padding: 50px;
+  /*background: #1d1e3b;*/
+  text-align: center;
+}
+
+.reasons h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.card {
+  background: #2a2b4d;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: left;
+  letter-spacing: 1.5px;
+}
+
+.card.purple {
+  background: #4a3bd6;
+}
+
+.card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.tags {
+  position: relative;
+  width: 400px;
+  height: 250px;
+  margin-bottom: 20px;
+  margin-top: 100px;
+  margin-left: 70px;
+}
+
+/* Спільний стиль для всіх тегів */
+.tag {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 8px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  font-size: 14px;
+  white-space: nowrap;
+  backdrop-filter: blur(5px);
+
+}
+
+.tag1,
+.tag2 {
+  background: rgba(223, 207, 207, 0.2);
+}
+
+/* Повністю прозорий фон для "освещение", "монтаж", "анимация" */
+.tag1,
+.tag2,
+.tag3,
+.tag4,
+.tag5 {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+  /* Напівпрозорість */
+}
+
+
 .tag1:hover {
-    background: rgba(255, 255, 255, 0.08); /* Як у .tag1 */
-     /* Повна видимість */
-    transform: translateX(-4px); 
+  background: rgba(255, 255, 255, 0.08);
+  /* Як у .tag1 */
+  /* Повна видимість */
+  transform: translateX(-4px);
 }
-     .tag5:hover {
-        background: rgba(255, 255, 255, 0.08); /* Як у .tag1 */
-         /* Повна видимість */
-        transform: translateY(4px); 
-    }
-      .tag3:hover{
-        background: rgba(255, 255, 255, 0.08); /* Як у .tag1 */
-         /* Повна видимість */
-        transform: translateX(4px); 
-    }
-       .tag4:hover, .tag2:hover {
-        background: rgba(255, 255, 255, 0.08); /* Як у .tag1 */
-         /* Повна видимість */
-        transform: translateY(-4px); 
-    }
-  
-  
-  /* Індивідуальні позиції кожної кнопки */
-  .tag1 { top: 20px; left: 30px; }
-  .tag2 { top: 80px; left: 200px; }
-  .tag3 { top: 140px; left: 50px; }
-  .tag4 { top: 50px; left: 300px; }
-  .tag5 { top: 180px; left: 250px; }
-  
-  .company-name {
-    position: absolute;
-    margin-top: 20px;
-    top: 20px;
-    width: 100%;
-    text-align: center;
-  }
-  
-  .company-name h1 {
-    font-size: 48px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    color: white;
-    margin: 0;
-  }
-  .company-name .subtitle {
-    font-size: 18px; /* Розмір тексту під заголовком */
-    font-weight: 400; /* Тонший шрифт */
-    color: rgba(255, 255, 255, 0.8); /* Напівпрозорий білий */
-    letter-spacing: 2px;
-    margin-top: 5px; /* Відступ від заголовка */
+
+.tag5:hover {
+  background: rgba(255, 255, 255, 0.08);
+  /* Як у .tag1 */
+  /* Повна видимість */
+  transform: translateY(4px);
 }
+
+.tag3:hover {
+  background: rgba(255, 255, 255, 0.08);
+  /* Як у .tag1 */
+  /* Повна видимість */
+  transform: translateX(4px);
+}
+
+.tag4:hover,
+.tag2:hover {
+  background: rgba(255, 255, 255, 0.08);
+  /* Як у .tag1 */
+  /* Повна видимість */
+  transform: translateY(-4px);
+}
+
+
+/* Індивідуальні позиції кожної кнопки */
+.tag1 {
+  top: 20px;
+  left: 30px;
+}
+
+.tag2 {
+  top: 80px;
+  left: 200px;
+}
+
+.tag3 {
+  top: 140px;
+  left: 50px;
+}
+
+.tag4 {
+  top: 50px;
+  left: 300px;
+}
+
+.tag5 {
+  top: 180px;
+  left: 250px;
+}
+
+.company-name {
+  position: absolute;
+  margin-top: 20px;
+  top: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.company-name h1 {
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: white;
+  margin: 0;
+}
+
+.company-name .subtitle {
+  font-size: 18px;
+  /* Розмір тексту під заголовком */
+  font-weight: 400;
+  /* Тонший шрифт */
+  color: rgba(255, 255, 255, 0.8);
+  /* Напівпрозорий білий */
+  letter-spacing: 2px;
+  margin-top: 5px;
+  /* Відступ від заголовка */
+}
+
 .button {
-    background-color: white; /* Білий фон кнопки */
-    color: #292424; /* Синій колір тексту */
-    border: 2px solid #f0f2f3; /* Синя межа кнопки */
-    border-radius: 5px; /* Заокруглені кути */
-    padding: 8px 16px; /* Менші відступи всередині кнопки */
-    font-size: 14px; /* Зменшений розмір шрифту */
-    font-weight: bold; /* Жирний шрифт */
-    text-align: center; /* Текст по центру */
-    cursor: pointer; /* Змінює курсор на "вказівний" */
-    transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease; /* Анімація при зміні кольору та натисканні */
-  }
-  
-  .button:hover { /* Синій фон при наведенні */
-    color: #292424;; /* Білий текст при наведенні */
-    transform: translateY(-2px); /* Легкий ефект підйому кнопки */
-  }
-  
-  .button:active {
-    background-color: #0056b3; /* Темніший синій фон при натисканні */
-    color: white; /* Білий текст при натисканні */
-    transform: translateY(2px); /* Легкий ефект натискання */
-  }
-  
-  
-  .socials p {
-    line-height: 25px; /* Висота рядка */
-    text-align: left; /* Вирівнювання тексту */
-    background:
-    rgba(5, 7, 31, 0.411);
-    padding: 20px; /* Внутрішні відступи для збільшення фону */
-    border-radius: 15px; /* Округлі краї */
-    margin: 17px 0; /* Зовнішні відступи для відокремлення від інших елементів */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Легка тінь для об'єму */
-    letter-spacing: 1px;
+  background-color: white;
+  /* Білий фон кнопки */
+  color: #292424;
+  /* Синій колір тексту */
+  border: 2px solid #f0f2f3;
+  /* Синя межа кнопки */
+  border-radius: 5px;
+  /* Заокруглені кути */
+  padding: 8px 16px;
+  /* Менші відступи всередині кнопки */
+  font-size: 14px;
+  /* Зменшений розмір шрифту */
+  font-weight: bold;
+  /* Жирний шрифт */
+  text-align: center;
+  /* Текст по центру */
+  cursor: pointer;
+  /* Змінює курсор на "вказівний" */
+  transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease;
+  /* Анімація при зміні кольору та натисканні */
 }
-  .socials h1 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700; /* Щоб виглядало мужньо, а не як записка до холодильника */
-    font-size: 48px; /* Можна підлаштувати розмір */
-    color: #f1ebeb; /* Колір тексту, якщо фон темний */
-  }
-  .reasons h2 {
-    margin-top: 40px; /* Зменшення відступу зверху */
-    text-align: center; /* Вирівнювання по центру (за потреби) */
+
+.button:hover {
+  /* Синій фон при наведенні */
+  color: #292424;
+  ;
+  /* Білий текст при наведенні */
+  transform: translateY(-2px);
+  /* Легкий ефект підйому кнопки */
+}
+
+.button:active {
+  background-color: #0056b3;
+  /* Темніший синій фон при натисканні */
+  color: white;
+  /* Білий текст при натисканні */
+  transform: translateY(2px);
+  /* Легкий ефект натискання */
+}
+
+
+.socials p {
+  line-height: 25px;
+  /* Висота рядка */
+  text-align: left;
+  /* Вирівнювання тексту */
+  background:
+    rgba(5, 7, 31, 0.411);
+  padding: 20px;
+  /* Внутрішні відступи для збільшення фону */
+  border-radius: 15px;
+  /* Округлі краї */
+  margin: 17px 0;
+  /* Зовнішні відступи для відокремлення від інших елементів */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  /* Легка тінь для об'єму */
+  letter-spacing: 1px;
+}
+
+.socials h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  /* Щоб виглядало мужньо, а не як записка до холодильника */
+  font-size: 48px;
+  /* Можна підлаштувати розмір */
+  color: #f1ebeb;
+  /* Колір тексту, якщо фон темний */
+}
+
+.reasons h2 {
+  margin-top: 40px;
+  /* Зменшення відступу зверху */
+  text-align: center;
+  /* Вирівнювання по центру (за потреби) */
 }
 
 /* Загальні стилі для мобільних пристроїв */
 @media (max-width: 768px) {
   body {
-    font-size: 14px; /* Зменшення розміру шрифту */
-    padding: 10px; /* Відступи для мобільних */
+    font-size: 14px;
+    /* Зменшення розміру шрифту */
+    padding: 10px;
+    /* Відступи для мобільних */
   }
 
   .hero {
-    flex-direction: column; /* Вертикальне розташування елементів */
+    flex-direction: column;
+    /* Вертикальне розташування елементів */
     padding: 20px;
   }
 
   .company-name h1 {
-    font-size: 32px; /* Зменшення розміру заголовка */
+    font-size: 32px;
+    /* Зменшення розміру заголовка */
     text-align: center;
   }
 
   .company-name .subtitle {
-    font-size: 16px; /* Зменшення розміру підзаголовка */
+    font-size: 16px;
+    /* Зменшення розміру підзаголовка */
     text-align: center;
   }
 
   .tags {
     display: flex;
-    flex-wrap: wrap; /* Перенос тегів на новий рядок */
-    justify-content: center; /* Вирівнювання по центру */
-    margin: 20px 0; /* Відступи зверху і знизу */
+    flex-wrap: wrap;
+    /* Перенос тегів на новий рядок */
+    justify-content: center;
+    /* Вирівнювання по центру */
+    margin: 20px 0;
+    /* Відступи зверху і знизу */
   }
 
   .tag {
-    margin: 10px; /* Відступи між кнопками */
-    font-size: 14px; /* Розмір тексту */
-    text-align: center; /* Текст по центру */
+    margin: 10px;
+    /* Відступи між кнопками */
+    font-size: 14px;
+    /* Розмір тексту */
+    text-align: center;
+    /* Текст по центру */
   }
 
   .socials {
-    text-align: center; /* Центрування тексту */
+    text-align: center;
+    /* Центрування тексту */
   }
 
   .socials h1 {
-    font-size: 24px; /* Зменшення розміру імені */
+    font-size: 24px;
+    /* Зменшення розміру імені */
   }
 
   .socials p {
-    font-size: 14px; /* Зменшення розміру тексту */
-    padding: 15px; /* Зменшення внутрішніх відступів */
+    font-size: 14px;
+    /* Зменшення розміру тексту */
+    padding: 15px;
+    /* Зменшення внутрішніх відступів */
   }
 
   .hero-image img {
-    max-width: 100%; /* Зображення займає всю ширину */
-    height: auto; /* Пропорційна висота */
-    margin-top: 20px; /* Відступ зверху */
+    max-width: 100%;
+    /* Зображення займає всю ширину */
+    height: auto;
+    /* Пропорційна висота */
+    margin-top: 20px;
+    /* Відступ зверху */
   }
 
   .reasons h2 {
-    font-size: 20px; /* Зменшення розміру заголовка */
+    font-size: 20px;
+    /* Зменшення розміру заголовка */
     text-align: center;
     margin-bottom: 20px;
   }
 
   .cards {
     display: flex;
-    flex-direction: column; /* Вертикальне розташування карток */
-    gap: 20px; /* Відстань між картками */
+    flex-direction: column;
+    /* Вертикальне розташування карток */
+    gap: 20px;
+    /* Відстань між картками */
   }
 
   .card {
-    padding: 15px; /* Зменшення внутрішніх відступів */
-    font-size: 14px; /* Зменшення розміру тексту */
+    padding: 15px;
+    /* Зменшення внутрішніх відступів */
+    font-size: 14px;
+    /* Зменшення розміру тексту */
   }
 
   .button {
-    width: 100%; /* Кнопка займає всю ширину */
-    padding: 10px; /* Зменшення внутрішніх відступів */
-    font-size: 16px; /* Зменшення розміру тексту */
+    width: 100%;
+    /* Кнопка займає всю ширину */
+    padding: 10px;
+    /* Зменшення внутрішніх відступів */
+    font-size: 16px;
+    /* Зменшення розміру тексту */
   }
 }
 
 @media (max-width: 450px) {
   .tags {
     display: flex;
-    flex-wrap: wrap; /* Перенос кнопок на новий рядок */
-    justify-content: center; /* Вирівнювання по центру */
-    gap: 10px; /* Відстань між кнопками */
-    margin: 20px 0; /* Відступи зверху і знизу */
+    flex-wrap: wrap;
+    /* Перенос кнопок на новий рядок */
+    justify-content: center;
+    /* Вирівнювання по центру */
+    align-items: center;
+    /* Вирівнювання по вертикалі */
+    gap: 8px;
+    /* Відстань між кнопками */
+    margin: 20px 0;
+    /* Відступи зверху і знизу */
+    padding: 0 10px;
+    /* Внутрішні відступи для контейнера */
   }
 
   .tag {
-    margin: 0; /* Забираємо зайві зовнішні відступи */
-    font-size: 12px; /* Зменшення розміру тексту */
-    padding: 8px 16px; /* Зменшення внутрішніх відступів */
-    text-align: center; /* Текст по центру */
-    flex: 1 1 calc(45% - 10px); /* Кнопки займають 45% ширини з відступами */
-    max-width: 150px; /* Максимальна ширина кнопки */
-    box-sizing: border-box; /* Враховує padding у ширині */
+    display: flex;
+    justify-content: center;
+    /* Текст по центру кнопки */
+    align-items: center;
+    /* Вирівнювання тексту по вертикалі */
+    font-size: 12px;
+    /* Зменшення розміру тексту */
+    padding: 10px 12px;
+    /* Внутрішні відступи кнопки */
+    background: rgba(255, 255, 255, 0.1);
+    /* Напівпрозорий фон */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    /* Напівпрозорий бордер */
+    border-radius: 20px;
+    /* Округлі краї */
+    flex: 1 1 calc(40% - 10px);
+    /* Кнопки займають 40% ширини з відступами */
+    max-width: 140px;
+    /* Максимальна ширина кнопки */
+    box-sizing: border-box;
+    /* Враховує padding у ширині */
+    text-align: center;
+    /* Текст по центру */
+    white-space: nowrap;
+    /* Забороняє перенесення тексту */
   }
 
   .company-name {
-    margin-bottom: 30px; /* Відступ між заголовком і кнопками */
+    margin-bottom: 40px;
+    /* Відступ між заголовком і кнопками */
   }
 
   .hero {
-    flex-direction: column; /* Вертикальне розташування елементів */
-    align-items: center; /* Центрування всіх елементів */
-    padding: 15px; /* Зменшення відступів */
+    flex-direction: column;
+    /* Вертикальне розташування елементів */
+    align-items: center;
+    /* Центрування всіх елементів */
+    padding: 15px;
+    /* Зменшення відступів */
   }
 
   .hero-content {
-    width: 100%; /* Ширина блоку для тексту */
-    text-align: center; /* Центрування тексту */
+    width: 100%;
+    /* Ширина блоку для тексту */
+    text-align: center;
+    /* Центрування тексту */
   }
 
   .hero-image img {
-    max-width: 80%; /* Зменшення розміру зображення */
-    height: auto; /* Пропорційна висота */
-    margin-top: 20px; /* Відступ зверху */
+    max-width: 80%;
+    /* Зменшення розміру зображення */
+    height: auto;
+    /* Пропорційна висота */
+    margin-top: 20px;
+    /* Відступ зверху */
   }
 
   .socials {
-    margin-top: 20px; /* Відступ між текстом і кнопками */
-    text-align: center; /* Центрування тексту */
+    margin-top: 20px;
+    /* Відступ між текстом і кнопками */
+    text-align: center;
+    /* Центрування тексту */
   }
 
   .socials p {
-    font-size: 12px; /* Зменшення розміру тексту */
-    padding: 10px; /* Зменшення внутрішніх відступів */
+    font-size: 12px;
+    /* Зменшення розміру тексту */
+    padding: 10px;
+    /* Зменшення внутрішніх відступів */
   }
 
   .button {
-    width: 100%; /* Кнопка займає всю ширину */
-    padding: 8px; /* Зменшення внутрішніх відступів */
-    font-size: 14px; /* Зменшення розміру тексту */
+    width: 100%;
+    /* Кнопка займає всю ширину */
+    padding: 8px;
+    /* Зменшення внутрішніх відступів */
+    font-size: 14px;
+    /* Зменшення розміру тексту */
   }
 }
