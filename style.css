@@ -233,3 +233,80 @@ body {
     margin-top: 40px; /* Зменшення відступу зверху */
     text-align: center; /* Вирівнювання по центру (за потреби) */
 }
+
+/* Загальні стилі для мобільних пристроїв */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px; /* Зменшення розміру шрифту */
+    padding: 10px; /* Відступи для мобільних */
+  }
+
+  .hero {
+    flex-direction: column; /* Вертикальне розташування елементів */
+    padding: 20px;
+  }
+
+  .company-name h1 {
+    font-size: 32px; /* Зменшення розміру заголовка */
+    text-align: center;
+  }
+
+  .company-name .subtitle {
+    font-size: 16px; /* Зменшення розміру підзаголовка */
+    text-align: center;
+  }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap; /* Перенос тегів на новий рядок */
+    justify-content: center;
+    margin: 20px 0;
+  }
+
+  .tag {
+    margin: 5px; /* Відступи між тегами */
+    font-size: 12px; /* Зменшення розміру тексту в тегах */
+  }
+
+  .socials {
+    text-align: center; /* Центрування тексту */
+  }
+
+  .socials h1 {
+    font-size: 24px; /* Зменшення розміру імені */
+  }
+
+  .socials p {
+    font-size: 14px; /* Зменшення розміру тексту */
+    padding: 15px; /* Зменшення внутрішніх відступів */
+  }
+
+  .hero-image img {
+    max-width: 100%; /* Зображення займає всю ширину */
+    height: auto; /* Пропорційна висота */
+    margin-top: 20px; /* Відступ зверху */
+  }
+
+  .reasons h2 {
+    font-size: 20px; /* Зменшення розміру заголовка */
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column; /* Вертикальне розташування карток */
+    gap: 20px; /* Відстань між картками */
+  }
+
+  .card {
+    padding: 15px; /* Зменшення внутрішніх відступів */
+    font-size: 14px; /* Зменшення розміру тексту */
+  }
+
+  .button {
+    width: 100%; /* Кнопка займає всю ширину */
+    padding: 10px; /* Зменшення внутрішніх відступів */
+    font-size: 16px; /* Зменшення розміру тексту */
+  }
+}
