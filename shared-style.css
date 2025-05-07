@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    background-image: url(foto2.jpg);
+    background-size: 200px;
+    background-position: center;
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+header {
+    text-align: center;
+    padding: 50px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+header p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+a.button {
+    display: inline-block;
+    background-color: white;
+    color: #292424;
+    border: 2px solid #f0f2f3;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease;
+}
+
+a.button:hover {
+    background-color: #e0e0e0;
+    transform: translateY(-2px);
+}
+
+a.button:active {
+    background-color: #d0d0d0;
+    transform: translateY(2px);
+}
+
+/* Адаптація для екранів до 550px */
+@media (max-width: 550px) {
+    body {
+        background-size: 150px; /* Зменшуємо розмір фону */
+    }
+
+    header {
+        padding: 30px; /* Зменшуємо відступи */
+    }
+
+    header h1 {
+        font-size: 28px; /* Зменшуємо розмір заголовка */
+    }
+
+    header p {
+        font-size: 16px; /* Зменшуємо розмір тексту */
+        line-height: 1.4; /* Зменшуємо міжрядковий інтервал */
+    }
+
+    a.button {
+        padding: 8px 16px; /* Зменшуємо внутрішні відступи кнопки */
+        font-size: 12px; /* Зменшуємо розмір тексту кнопки */
+    }
+}
